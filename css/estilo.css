@@ -27,14 +27,6 @@ html::-webkit-scrollbar-track{
     background: transparent;
 }
 
-/*body {
-  margin: 0;
-  padding: 0;
-  line-height: 1.5;
-  font-size: 16px;
-  background: #080808;
-  color: hsl(0, 0%, 100%);
-}*/
 body{
   background: #111;
   overflow-x: hidden;
