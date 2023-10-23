@@ -1,19 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&family=Poppins&display=swap");
 
 :root {
     --yellow: #f9ca24;
 }
 * {
-  margin: 0;
-  padding: 0;
-  font-family: 0;
-  box-sizing: border-box;
-  outline: none;
-  border: none;
-  text-decoration: none;
-  text-transform: capitalize;
-  transition: all 0.2s linear;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Nunito', sans-serif;
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
 }
 *::selection{
     background: var(--yellow) ;
@@ -30,34 +27,59 @@ html::-webkit-scrollbar-track{
     background: transparent;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  line-height: 1.5;
-  font-size: 16px;
-  background: #080808;
-  color: hsl(0, 0%, 100%);
+body{
+  background: #111;
+  overflow-x: hidden;
 }
-aside {
-  width: 35rem;
-  background-color: #1a1a1a;
+header{
   position: fixed;
   top: 0; left: 0;
   z-index: 1000;
   height: 100%;
-  display: center;
+  width: 35rem;
+  background: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-flow: column;
   text-align: center;
-
 }
+ 
 span {
-  color: rgb(141, 23, 23);
-  
+  color: #f9ca24;
   font-size: 5rem
 }
-div.logo {
+div.logo a{
   font-size: 3.5rem;
   color: #fff;
+}
+
+div.logo{
+  padding-bottom: 10rem;
+}
+
+header .navbar{
+    width: 100%;
+}
+
+header .navbar li{
+    list-style: none;
+    padding: 1rem 3rem;
+}
+
+header .navbar li a{
+    display: block;
+    padding: 1rem;
+    margin: 1rem 0;
+    background: #333;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 5rem;
+    
+}
+
+header .navbar ul li a:hover{
+    background: var(--yellow);
 }
 
 
