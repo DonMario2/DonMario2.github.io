@@ -30,13 +30,20 @@ html::-webkit-scrollbar-track{
 body{
   background: #111;
   overflow-x: hidden;
+  padding-left: 35rem;
 }
+
+section{
+    min-height: 100vh;
+    padding: 1rem;
+}
+
 header{
   position: fixed;
   top: 0; left: 0;
   z-index: 1000;
   height: 100%;
-  width: 35rem;
+  width:: 100rem;
   background: #1a1a1a;
   display: flex;
   align-items: center;
@@ -55,7 +62,7 @@ div.logo a{
 }
 
 div.logo{
-  padding-bottom: 10rem;
+  padding-bottom: 4rem;
 }
 
 header .navbar{
@@ -64,7 +71,7 @@ header .navbar{
 
 header .navbar li{
     list-style: none;
-    padding: 1rem 3rem;
+    padding: 0.2rem 2.5rem;
 }
 
 header .navbar li a{
@@ -93,6 +100,54 @@ header .navbar li a:hover{
   z-index: 1000;
   display: none;
 }
+
+.home{
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  padding: 0 15rem;
+}
+
+.home img{
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 5rem;
+  margin-top: -10rem;
+  border: 0.5rem solid var(--yellow);
+}
+.home h3{
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.home h1{
+  font-size: 5rem;
+  color: #fff;
+  margin-left: 10rem;
+}
+
+.home h1 span{
+  color: #f9ca24;
+}
+.home p{
+  font-size: 2rem;
+  color: #eee;
+  padding: 1rem 0;
+}
+
+.home p i{
+  font-size: 2rem;
+  color: #f9ca24;
+}
+
+
+
+
+
+
+
 
 @media (max-width:1200px){
   html{
