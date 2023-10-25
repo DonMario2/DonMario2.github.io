@@ -26,7 +26,9 @@ html::-webkit-scrollbar{
 html::-webkit-scrollbar-track{
     background: transparent;
 }
-
+html::-webkit-scrollbar-thumb{
+  background: var(--yellow);
+}
 body{
   background: #111;
   overflow-x: hidden;
@@ -86,7 +88,9 @@ header .navbar li a{
 }
 
 header .navbar li a:hover{
+  color: #333;
     background: var(--yellow);
+    transition: .2s;
 }
 
 #menu{
@@ -98,7 +102,7 @@ header .navbar li a:hover{
   font-size: 2.5rem;
   padding: 1rem 1.5rem;
   z-index: 1000;
-  display: none;
+  display: flex;
 }
 
 .home{
@@ -139,13 +143,20 @@ header .navbar li a:hover{
 
 .home p i{
   font-size: 2rem;
-  color: #f9ca24;
+  color: ;
 }
 
+.about h3{
+  font-size: 2.5rem;
+  color: #eee;
+  text-transform: none;
+  text-align: right;
+}
 
-
-
-
+.about h3 spam{
+  font-size: 3rem;
+  color: #f9ca24;
+}
 
 
 
