@@ -36,9 +36,20 @@ body{
 }
 
 section{
-    min-height: 100vh;
-    padding: 1rem;
+  min-height: 100vh;
+  padding: 1rem;
 }
+
+
+.heading{
+  text-align: center;
+  margin: 0 6rem;
+  font-size: 4rem;
+  padding: 1rem;
+  border-bottom: .1rem solid #fff4;
+  color: #fff;
+}
+
 
 header {
   position: fixed;
@@ -53,8 +64,8 @@ header {
   flex-flow: column;
   text-align: center;
 }
- 
-span {
+
+div.logo a span {
   color: #f9ca24;
   font-size: 5rem
 }
@@ -88,10 +99,11 @@ header .navbar li a{
 }
 
 header .navbar li a:hover{
-  color: #333;
+    color: #333;
     background: var(--yellow);
     transition: .2s;
 }
+
 
 #menu{
   position: fixed;
@@ -143,9 +155,17 @@ header .navbar li a:hover{
 
 .home p i{
   font-size: 2rem;
-  
+  color: #f9ca24;
 }
 
+
+
+.about{
+  display: flex;
+  justify-content: center; 
+  flex-flow: column; 
+  padding: 0 10rem; 
+}
 .about h3{
   font-size: 2.5rem;
   color: #eee;
@@ -158,11 +178,164 @@ header .navbar li a:hover{
   color: #f9ca24;
 }
 
+.btn{
+  padding: .7rem 3rem;
+  background: #333 ;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 2rem;
+  border-radius: 5rem;
+}
+
+.btn i{
+  padding:0 .5rem;
+  font-size: 1.8rem;
+}
+
+.btn:hover{
+  background: var(--yellow);
+}
+
+.education{
+  display: flex;
+  justify-content: center; 
+  flex-flow: column; 
+  padding: 0 10rem;
+}
+
+.education h1 span{
+  font-size: 4rem;
+  color: #eee;
+}
+
+.education h1 {
+  font-size: 4rem;
+  color: #f9ca24;
+}
+.education .info h3{
+  font-size: 3rem;
+  color: #eee;
+  text-transform: none;
+  text-align: left;
+}
+
+.education .info h3 span{
+  font-size: 3rem;
+  color: #f9ca24;
+}
+
+.education .btn{
+  position: relative;
+}
+
+.porfolio h1 span{
+  font-size: 4rem;
+  color: #eee;
+}
+
+.porfolio h1 {
+  font-size: 4rem;
+  color: #f9ca24;
+}
+.porfolio .box-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+.porfolio .box-container .box{
+  height: 20rem;
+  width: 26rem;
+  border-radius: 1rem;
+  margin: 2rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+.porfolio .box-container .box img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.porfolio .box-container .box:hover img{
+  transform: scale(1.2);
+}
+
+
+
+.contact h1 {
+  font-size: 4rem;
+  color: #f9ca24;
+}
+
+.contact h1 span{
+  font-size: 4rem;
+  color: #eee;
+}
+
+.contact .row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact .row content {
+  flex: 1 1 30rem;
+  padding: 4rem;
+  padding-bottom: 0;
+}
+.contact .row form {
+  flex: 1 1 45rem;
+  padding: 2rem;
+  margin: 2rem;
+  margin-bottom: 4rem;
+}
+
+.contact .row form .box{
+  padding: 1.5rem;
+  margin: 1rem 0;
+  background: #3333;
+  color: #fff;
+  text-transform: none;
+  font-size: 1.7rem;
+  width: 100%;
+}
+
+.contact .row form .messager{
+  height: 15rem;
+  resize: none;
+}
+.contact .row .content .title{
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+
+}
+.contact .row .content .info h3{
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  color: #eee;
+  padding: 1rem 0;
+  font-weight: normal;
+}
+
+.contact .row .content .info h3 i{
+  padding-right: 1rem;
+  color: var(--yellow);
+}
 
 
 @media (max-width:1200px){
   html{
       font-size: 55%;
+  }
+
+  .home{
+    padding: 1rem 4rem;
   }
 }
 @media (max-width:991px){
@@ -174,6 +347,10 @@ header .navbar li a:hover{
   }
   header.toggle{
       left: 0%;
+  }
+  
+  body{
+    padding: 0;
   }
 
 }
